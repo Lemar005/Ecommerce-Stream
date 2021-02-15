@@ -1,23 +1,20 @@
-# Compiled class file
-*.class
+package main;
 
-# Log file
-*.log
+import domain.Price;
+import domain.Product;
+import domain.ProductFactory;
 
-# BlueJ files
-*.ctxt
+public class Application {
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+	public static void main(String[] args) {
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+		
+		Product p = ProductFactory.getProduct("Stas", new Price(10, "dfdf"));
+		System.out.println(p);
+		
+	//	Product r = new Product(11, "rr", new Price(10, "df"));
+		//r.setPrice(new Price(10,"df"));
+		//System.out.println(r);
+	}
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+}
