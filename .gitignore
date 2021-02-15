@@ -1,20 +1,14 @@
-package main;
-
-import domain.Price;
-import domain.Product;
-import domain.ProductFactory;
-
-public class Application {
-
-	public static void main(String[] args) {
-
-		
-		Product p = ProductFactory.getProduct("Stas", new Price(10, "dfdf"));
-		System.out.println(p);
-		
-	//	Product r = new Product(11, "rr", new Price(10, "df"));
-		//r.setPrice(new Price(10,"df"));
-		//System.out.println(r);
-	}
-
-}
+CompanyComplexOOPExample
+ - src/
+   - main
+     - Application(Class + static main())
+   - co
+     - Company  
+   - co.departments
+     - CompanyHRDepartment
+     - CompanyITDepartment
+   - co.jobs
+     - DeveloperInterface
+     - TesterInterface
+   - tests
+     - SimpleTest(Class)  
